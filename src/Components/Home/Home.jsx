@@ -4,6 +4,8 @@ import { IoIosMail } from "react-icons/io";
 import { FaHome } from "react-icons/fa";
 import { HiMiniBuildingOffice2 } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
+import Form from "../Header/Form/Form";
+import SortUsers from "../Header/SortUsers/SortUsers";
 
 const Home = () => {
   const [users, setUsers] = useState();
@@ -46,31 +48,33 @@ const Home = () => {
   // });
 
   return (
-    <div className="py-6 container mx-auto">
-      <div className="flex gap-2 px-4 container mx-auto">
-      <div className="flex px-2 justify-center mx-auto rounded-2xl items-center gap-2 h-12 bg-gradient-to-r from-indigo-500 to-violet-500">
-        <span className="text-2xl text-white">
-          <IoSearch />
-        </span>
-        <input
-          className="text-xl bg-transparent focus:outline-none text-white"
-          type="text"
-          placeholder="Search..."
-          value={searchQuery}
-          onChange={handleSearchInputChange}
-        />
+    <div className="py-6 px-6 container mx-auto">
+      <div className="flex justify-between flex-col md:flex-row gap-2">
+        {/*===============================
+                   Form Modal Area 
+          ===============================*/}
+        <Form/>
+        {/*===============================
+                  Search Area 
+          ===============================*/}
+        <div className="flex items-center px-2 rounded-2xl bg-gradient-to-r from-indigo-500 to-violet-500">
+          <span className="text-2xl text-white">
+            <IoSearch />
+          </span>
+          <input
+            className="input w-48 bg-transparent border-none focus:outline-none font-semibold text-white"
+            type="text"
+            placeholder="Search..."
+            value={searchQuery}
+            onChange={handleSearchInputChange}
+          />
+        </div>
+        {/*===============================
+                  Sort Area
+          ===============================*/}
+        <SortUsers/>
       </div>
-      <div className="w-52 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-2xl flex justify-end">
-        <select className="select text-white text-lg w-full max-w-xs bg-transparent focus:outline-none border-none">
-          <option disabled selected>
-            Who shot first?
-          </option>
-          <option>Han Solo</option>
-          <option>Greedo</option>
-        </select>
-      </div>
-      </div>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 lg:px-12 px-6 py-12">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 lg:px-12 py-12">
         {filteredUsers?.map((item) => (
           <div key={item.id} className="">
             <div className="card  border">
