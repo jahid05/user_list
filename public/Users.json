@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "avatar": "https://i.ibb.co/1Kt9HgL/1.jpg",
+    "firstName": "Alice",
+    "lastName": "Smith",
+    "email": "alice.smith@example.com",
+    "address": "123 Main Street, Suite 101, Anytown",
+    "companyName": "TechNova Solutions"
+  },
+  {
+    "id": 2,
+    "avatar": "https://i.ibb.co/nM2Qd4c/3.jpg",
+    "firstName": "Bob",
+    "lastName": "Johnson",
+    "email": "bob.johnson@example.com",
+    "address": "456 Oak Avenue, Suite 202, Springfield",
+    "companyName": "ByteForge Technologies"
+  },
+  {
+    "id": 3,
+    "avatar": "https://i.ibb.co/N6HY1rD/4.jpg",
+    "firstName": "Charlie",
+    "lastName": "Williams",
+    "email": "charlie.williams@example.com",
+    "address": "789 Maple Street, Suite 303, Cityville",
+    "companyName": "Innovatech Labs"
+  },
+  {
+    "id": 4,
+    "avatar": "https://i.ibb.co/yNDk431/5.jpg",
+    "firstName": "David",
+    "lastName": "Brown",
+    "email": "david.brown@example.com",
+    "address": "321 Elm Road, Suite 101, Townsville",
+    "companyName": "CodeCrafters Inc."
+  },
+  {
+    "id": 5,
+    "avatar": "https://i.ibb.co/DfVPm4G/6.jpg",
+    "firstName": "Emma",
+    "lastName": "Jones",
+    "email": "emma.jones@example.com",
+    "address": "555 Pine Lane, Suite 404, Metropolis",
+    "companyName": "NexGen Technologies"
+  },
+  {
+    "id": 6,
+    "avatar": "https://i.ibb.co/mbqW55M/7.jpg",
+    "firstName": "Frank",
+    "lastName": "Taylor",
+    "email": "frank.taylor@example.com",
+    "address": "888 Cedar Avenue, Suite 505, Smalltown",
+    "companyName": "CyberSprint Solutions"
+  },
+  {
+    "id": 7,
+    "avatar": "https://i.ibb.co/WFfwRmv/8.jpg",
+    "firstName": "Grace",
+    "lastName": "Martinez",
+    "email": "grace.martinez@example.com",
+    "address": "777 Oak Street, Suite 606, Villageton",
+    "companyName": "TechWise Innovations"
+  },
+  {
+    "id": 8,
+    "avatar": "https://i.ibb.co/qY2Q4LM/9.jpg",
+    "firstName": "Henry",
+    "lastName": "Clark",
+    "email": "henry.clark@example.com",
+    "address": "999 Elm Drive, Suite 707, Hamletville",
+    "companyName": "QuantumByte Systems"
+  },
+  {
+    "id": 9,
+    "avatar": "https://i.ibb.co/jMz3QLc/10.jpg",
+    "firstName": "Isabel",
+    "lastName": "Lopez",
+    "email": "isabel.lopez@example.com",
+    "address": "111 Birch Road, Suite 808, Countyville",
+    "companyName": "SynapseTech Solutions"
+  },
+  {
+    "id": 10,
+    "avatar": "https://i.ibb.co/TPjZd4d/11.jpg",
+    "firstName": "James",
+    "lastName": "Nguyen",
+    "email": "james.nguyen@example.com",
+    "address": "222 Maple Drive, Suite 909, Rivertown",
+    "companyName": "MindScape Technologies"
+  },
+  {
+    "id": 11,
+    "avatar": "https://i.ibb.co/qMTdZBG/12.jpg",
+    "firstName": "Emma",
+    "lastName": "Jones",
+    "email": "emma.jones@example.com",
+    "address": "555 Pine Lane, Suite 404, Metropolis",
+    "companyName": "NexGen Technologies"
+  },
+  {
+    "id": 12,
+    "avatar": "https://i.ibb.co/F8SxQ1y/13.jpg",
+    "firstName": "Frank",
+    "lastName": "Taylor",
+    "email": "frank.taylor@example.com",
+    "address": "888 Cedar Avenue, Suite 505, Smalltown",
+    "companyName": "CyberSprint Solutions"
+  },
+  {
+    "id": 13,
+    "avatar": "https://i.ibb.co/z2dH8bN/14.jpg",
+    "firstName": "Grace",
+    "lastName": "Martinez",
+    "email": "grace.martinez@example.com",
+    "address": "777 Oak Street, Suite 606, Villageton",
+    "companyName": "TechWise Innovations"
+  },
+  {
+    "id": 14,
+    "avatar": "https://i.ibb.co/D4Ymr39/15.jpg",
+    "firstName": "Henry",
+    "lastName": "Clark",
+    "email": "henry.clark@example.com",
+    "address": "999 Elm Drive, Suite 707, Hamletville",
+    "companyName": "QuantumByte Systems"
+  },
+  {
+    "id": 15,
+    "avatar": "https://i.ibb.co/5hk94Rd/2.jpg",
+    "firstName": "Isabel",
+    "lastName": "Lopez",
+    "email": "isabel.lopez@example.com",
+    "address": "111 Birch Road, Suite 808, Countyville",
+    "companyName": "SynapseTech Solutions"
+  }
+]
