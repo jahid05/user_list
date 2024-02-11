@@ -3,7 +3,6 @@ import React from "react";
 const Form = () => {
   return (
     <div className="">
-        {/* You can open the modal using document.getElementById('ID').showModal() method */}
         <button
           className="btn bg-gradient-to-r from-indigo-500 to-violet-500 rounded-2xl text-white md:w-48 w-full"
           onClick={() => document.getElementById("my_modal_3").showModal()}
@@ -13,12 +12,35 @@ const Form = () => {
         <dialog id="my_modal_3" className="modal">
           <div className="modal-box">
             <form method="dialog">
-              {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+              <button className="btn btn-sm btn-circle bg-gradient-to-r from-indigo-500 to-violet-500 text-white absolute right-2 top-2">
                 ✕
               </button>
             </form>
             <form className="card-body">
+                <div className="grid grid-cols-2 gap-2">
+                <div className="form-control">
+                <label className="label">
+                  <span className="label-text">First Name</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="first name"
+                  className="input input-bordered"
+                  required
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Last Name</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="last name"
+                  className="input input-bordered"
+                  required
+                />
+              </div>
+                </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -32,22 +54,28 @@ const Form = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Password</span>
+                  <span className="label-text">Address</span>
                 </label>
                 <input
-                  type="password"
-                  placeholder="password"
+                  type="text"
+                  placeholder="address"
                   className="input input-bordered"
                   required
                 />
+              </div>
+              <div className="form-control">
                 <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
-                    Forgot password?
-                  </a>
+                  <span className="label-text">Company</span>
                 </label>
+                <input
+                  type="text"
+                  placeholder="company"
+                  className="input input-bordered"
+                  required
+                />
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                <button className="btn bg-gradient-to-r from-indigo-500 to-violet-500">Add User</button>
               </div>
             </form>
           </div>

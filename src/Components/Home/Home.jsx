@@ -30,22 +30,6 @@ const Home = () => {
       )
     : [];
 
-  // const [sortCriteria, setSortCriteria] = useState("firstName");
-
-  // const handleSortChange = (event) => {
-  //   setSortCriteria(event.target.value);
-  // };
-
-  // const sortedUsers = users.slice().sort((a, b) => {
-  //   if (sortCriteria === "firstName") {
-  //     return a.firstName.localeCompare(b.firstName);
-  //   } else if (sortCriteria === "email") {
-  //     return a.email.localeCompare(b.email);
-  //   } else if (sortCriteria === "company") {
-  //     return a.company.localeCompare(b.company);
-  //   }
-  //   return 0;
-  // });
 
   return (
     <div className="py-6 px-6 container mx-auto">
