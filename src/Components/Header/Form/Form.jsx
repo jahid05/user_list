@@ -16,7 +16,7 @@ const Form = () => {
                 ✕
               </button>
             </form>
-            <form className="card-body">
+            <form className="">
                 <div className="grid grid-cols-2 gap-2">
                 <div className="form-control">
                 <label className="label">

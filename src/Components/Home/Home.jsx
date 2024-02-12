@@ -6,9 +6,12 @@ import { HiMiniBuildingOffice2 } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
 import Form from "../Header/Form/Form";
 import SortUsers from "../Header/SortUsers/SortUsers";
+import Search from "../Header/Search/Search";
 
 const Home = () => {
   const [users, setUsers] = useState();
+  const [sortData, setSortData] = useState();
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     fetch("https://dummyjson.com/users")
@@ -17,8 +20,6 @@ const Home = () => {
         setUsers(json.users);
       });
   }, []);
-
-  const [searchQuery, setSearchQuery] = useState("");
 
   const handleSearchInputChange = (event) => {
     setSearchQuery(event.target.value);
@@ -30,33 +31,37 @@ const Home = () => {
       )
     : [];
 
+  const searchData = { handleSearchInputChange, searchQuery };
 
+  const handleSorting = (event) => {
+    const sortItem = [...users].sort((a, b) => {
+      if (a[event] < b[event]) return -1;
+      if (a[event] > b[event]) return 1;
+
+      const nameA = a.company.name.toUpperCase();
+      const nameB = b.company.name.toUpperCase();
+      console.log(a,b);
+      if (nameA < nameB) return -1;
+      if (nameA > nameB) return 1;
+      return 0;
+    });
+    setUsers(sortItem);
+  };
   return (
-    <div className="py-6 px-6 container mx-auto">
+    <div className="py-6 px-4 container mx-auto">
       <div className="flex justify-between flex-col md:flex-row gap-2">
         {/*===============================
                    Form Modal Area 
           ===============================*/}
-        <Form/>
+        <Form></Form>
         {/*===============================
                   Search Area 
           ===============================*/}
-        <div className="flex items-center px-2 rounded-2xl bg-gradient-to-r from-indigo-500 to-violet-500">
-          <span className="text-2xl text-white">
-            <IoSearch />
-          </span>
-          <input
-            className="input w-48 bg-transparent border-none focus:outline-none font-semibold text-white"
-            type="text"
-            placeholder="Search..."
-            value={searchQuery}
-            onChange={handleSearchInputChange}
-          />
-        </div>
+        <Search searchData={searchData}></Search>
         {/*===============================
                   Sort Area
           ===============================*/}
-        <SortUsers/>
+        <SortUsers handleSorting={handleSorting}></SortUsers>
       </div>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 lg:px-12 py-12">
         {filteredUsers?.map((item) => (
